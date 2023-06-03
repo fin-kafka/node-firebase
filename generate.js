@@ -20,15 +20,6 @@ const QUESTIONS = [
       else return 'Entity name may only include letters, numbers, underscores and hashes.';
     }
   },
-  {
-    name: 'file-name',
-    type: 'input',
-    message: 'File name (camelCase & singular) | example: booking or bookingPayment :',
-    validate: function (input) {
-      if (/^([A-Za-z\-\_\d])+$/.test(input)) return true;
-      else return 'Entity name may only include letters, numbers, underscores and hashes.';
-    }
-  }
 ];
 
 const CURR_DIR = process.cwd();
